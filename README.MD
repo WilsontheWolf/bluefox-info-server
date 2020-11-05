@@ -3,11 +3,22 @@ A small express server for sending stats for
 the (upcoming) BlueFox panel.
 
 ## Running
+First install the dependancies using yarn or
+npm
+```bash
+yarn install
+# or
+npm install 
+```
 To start the server make sure there is an
 environment variable called `BLUEFOX_PORT` with 
 the port to host on. If this is missing the 
 server will shutdown.
 
+After that you can run
+```bash
+node .
+```
 ## Usage
 ### Sending
 To send stats simply make a `POST` request to 
