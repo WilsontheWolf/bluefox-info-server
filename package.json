@@ -1,0 +1,10 @@
+{
+  "name": "bluefox-info-server",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "WilsontheWolf",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
