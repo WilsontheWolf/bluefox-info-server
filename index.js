@@ -7,7 +7,7 @@ if (!port) {
 
 const express = require('express');
 const app = express();
-app.use(express.json({ type: '*/*'}));
+app.use(express.json({ type: '*/*' }));
 
 let data = [];
 
@@ -20,9 +20,14 @@ app.post('/', (req, res) => {
     if (typeof body === 'string') body = [body];
     if (!Array.isArray(body)) return res.status(400).send(JSON.stringify({
         error: true,
-        message: 'Error: Bad Request. Request must be an array or string.'
+        message: 'Error: Bad Request. Request must be an array of strings or a string.'
     }));
-    data = body.slice(0, 4);
+    body = body.slice(0, 4);
+    if (body.some((v) => typeof v !== 'string')) return res.status(400).send(JSON.stringify({
+        error: true,
+        message: 'Error: Bad Request. Request must be an array of strings or a string.'
+    }));;
+    data = body;
     res.send(JSON.stringify({
         error: false,
         message: 'Successfully set new value!'
