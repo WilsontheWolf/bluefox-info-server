@@ -1,10 +1,12 @@
 {
-  "name": "bluefox-info-server",
-  "version": "0.0.1",
-  "main": "index.js",
-  "license": "MIT",
-  "author": "WilsontheWolf",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "bluefox-info-server",
+    "version": "0.0.1",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "WilsontheWolf",
+    "description": "A small express server for sending stats for the BlueFox panel.",
+    "repository": "https://github.com/WilsontheWolf/bluefox-info-server",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }

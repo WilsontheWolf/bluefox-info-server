@@ -3,7 +3,7 @@ A small express server for sending stats for
 the (upcoming) BlueFox panel.
 
 ## Running
-First install the dependancies using yarn or
+First install the dependencies using yarn or
 npm
 ```bash
 yarn install
